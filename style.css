@@ -1,0 +1,179 @@
+* {
+	font-family: Open Sans;
+	font-weight: 400;
+	font-size: 14px;
+}
+
+.NavArea {
+	background-color: #009999;
+	width: 100%;
+	text-align: center;
+}
+.nav {
+	display: inline-block;
+}
+.nav li a {
+	color: #fff;
+	font-size: 18px;
+	font-weight: 300;
+}
+.nav > li > a:hover,
+.nav > li > a:focus,
+.nav .open > a:hover,
+.nav .open > a:focus {
+	border-radius: 0px;
+	background-color: #fff;
+	color: #009999;
+	font-size: 18px;
+	font-weight: 300;
+}
+.jumbotron {
+	background-color: #99cccc;
+}
+#logo img {
+	display: block;
+	margin-left: auto;
+    margin-right: auto;
+    margin-bottom: 30px;
+}
+#SearchArea {
+	width: 1000px;
+	margin-left: auto;
+    margin-right: auto;
+    font-size: 16px;
+	font-weight: 300;
+}
+
+.TextBox {
+	color: #999;
+	font-size: 16px;
+	font-weight: 300;
+	border: none;
+	border-radius: 2px;
+	width: 162px;
+	height: 30px;
+	margin: 5px;
+}
+#BanChoThue {
+	width: 100px;
+	height: 55px;
+	border-radius: 2px;
+}
+#SearchBox {
+	width: 750px;
+	height: 55px;
+	border: none;
+	border-radius: 2px;
+	margin: 5px;
+}
+#SearchButton {
+	width: 100px;
+	height: 55px;
+	background-color: #009999;
+	color: #fff;
+	font-weight: 400;
+	border: none;
+	border-radius: 2px;
+	margin: 5px;
+}
+#UndoButton {
+	width: 162px;
+	height: 30px;
+	background-color: #009999;
+	color: #fff;
+	font-size: 16px;
+	font-weight: 400;
+	border: none;
+	border-radius: 2px;
+	margin: 5px;
+}
+
+/*PHAN TIN TUC*/
+.container {
+	width: 1050px;
+}
+#NewsTitle {
+	font-weight: 300;
+	margin-bottom: 30px;
+}
+.News {
+	margin-bottom: 50px;
+}
+.News img{
+	float: left;
+	margin-right: 15px;
+
+}
+.News h3 {
+	height: 47px;
+	margin-top: 0px;
+	margin-bottom: 5px;
+}	
+.News h3 a{
+	font-weight: 500;
+	font-size: 18px;
+	color: #009999;
+	text-decoration: none;
+}
+.News ul li {
+	list-style: none;
+	line-height: 17px;
+}
+.News ul li label {
+	font-weight: 400;
+	margin: 1.25px;
+}
+.News p {
+	margin-left: 0px;
+	font-weight: 400;
+}
+
+/*Phan chay QUANG CAO*/
+#QuangCao {
+	width: 100%;
+}
+
+/*Du an nhieu giao dich*/
+#Title_DANGD {
+	background-color: #009999;
+	color: #fff;
+	padding: 5px;
+	font-size: 20px;
+	font-weight: 300;
+	margin-bottom: 0px;
+}
+#List_DANGD {
+	padding-left: 0px;
+}
+#List_DANGD li {
+	list-style: none;
+}
+#List_DANGD li a {
+	display: block;
+	padding: 5px;
+	text-decoration: none;
+	color: #333;
+}
+#List_DANGD li a:hover {
+	color: #fff;
+	background-color: #99cccc;
+}
+
+
+/*FOOTER*/
+#Footer {
+	margin-top: 100px;
+}
+
+#FooterNav {
+	background-color: #009999;
+}
+#FooterJumbotron {
+	background-color: #fff;
+
+}
+#FooterJumbotron p {
+	font-size: 15px;
+	font-weight: 400;
+	text-align: center;
+}
