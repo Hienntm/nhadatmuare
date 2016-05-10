@@ -25,34 +25,45 @@
 			<!-- HEADER -->
 			<div>
 				<!-- Nav bar -->
-				<div class="NavArea">
-					<ul class="nav nav-pills">
-						<li><a href="#">Trang chủ</a></li>
-						<li class="dropdown"><a href="#">Bán</a>
-							<ul class="dropdown-menu" aria-labelledby="dropdownMenu1">
-								<li><a href="#">Biệt thự</a></li>
-								<li><a href="#">Đất nền dự án</a></li>
-								<li><a href="#">Căn hộ chung cư</a></li>
-								<li><a href="#">Nhà riêng</a></li>
-								<li><a href="#">Nhà mặt phố</a></li>
-								<li><a href="#">Nhà phân lô</a></li>
-								<li><a href="#">Đất</a></a></li>
-								<li><a href="#">Trang trại, khu nghỉ dưỡng</a></li>
-								<li><a href="#">Kho, nhà xưởng</a></li>
-								<li><a href="#">Khách sạn, nhà nghỉ</a></li>
-								<li><a href="#">Mặt bằng, cửa hàng</a></li>
-							</ul>	
-						</li>
-						<li><a href="#">Cho thuê</a></li>
-						<li><a href="#">Liên hệ</a></li>
-						<li><a href="#">Đăng nhập</a></li>
-						<li><a href="#">Đăng tin</a></li>
-					</ul>
-
-				</div>
-
-				
-					
+				<div id="nav">
+		            <div id="nav_wrapper">
+		                <ul class="mainmenu">
+		                    <li><a href="#">Trang chủ</a></li>
+		                    <li><a href="#">Bán</a>
+		                        <ul class="dropdown">
+		                        	<li><a href="#">Đất nền</a></li>
+		                            <li><a href="#">Căn hộ chung cư</a></li>
+		                            <li><a href="#">Nhà riêng</a></li>
+						            <li><a href="#">Nhà mặt phố</a></li>
+									<li><a href="#">Nhà phân lô</a></li>
+									<li><a href="#">Đất</a></a></li>
+									<li><a href="#">Mặt bằng, cửa hàng</a></li>								<li><a href="#">Kho, nhà xưởng</a></li>
+									<li><a href="#">Khách sạn, nhà nghỉ</a></li>                            
+									<li><a href="#">Biệt thự</a></li>
+									<li><a href="#">Trang trại, khu nghỉ dưỡng</a></li>
+		                        </ul>
+		                    </li>
+		                    <li><a href="#">Cho thuê</a>
+		                        <ul class="dropdown">
+		                            <li><a href="#">Nhà mặt phố</a></li>
+		                            <li><a href="#">Nhà riêng</a></li>
+		                            <li><a href="#">Căn hộ chung cư</a></li>
+		                            <li><a href="#">Nhà trọ, phòng trọ</a></li>
+		                            <li><a href="#">Cửa hàng, ki ốt</a></li>
+		                            <li><a href="#">Văn phòng</a></li>		                            
+		                            <li><a href="#">Kho, xưởng</a></li>
+		                            <li><a href="#">Đất</a></li>
+		                            <li><a href="#">Biệt thư</a></li>
+		                            <li><a href="#">Khách sạn, nhà nghỉ</a></li>
+		                            <li><a href="#">Các loại bất động sản khác</a></li>
+		                        </ul>
+		                    </li>
+		                    <li><a href="#">Liên hệ</a></li>
+		                    <li><a href="#">Đăng nhập</a></li>
+		                    <li><a id="post" href="#"><img src="images/new-file-icon.png">Đăng tin</a></li>
+		                </ul>
+		            </div>
+		        </div>
 
 			</div>	
 
@@ -124,7 +135,7 @@
 
 
 						<!-- Liên hệ -->
-						<h3>Liên hệ</h3>
+						<h3><img src="images/phone-call-icon.png">Liên hệ</h3>
 						<div>
 							<ul class="Info LeftColumn">
 								<li>
@@ -169,150 +180,176 @@
 						</div>	
 
 					</div>
+                
 
 
 
-					<!-- PHẦN TIN LIÊN QUAN -->
+					<!-- PHẦN TIN LIÊN QUAN -->     
 					<div class="RelatedNews">
 						<h2 id="NewsTitle">Tin nhà đất tại đường Đinh Quang Ân khác</h2>
-						<div class="News">
-							<div class="News_Images">
-								<a href="#"><img src="images/Images_1.jpg"></a>
-							</div>	
-							<h3><a href="#">Bán gấp đất mặt tiền Đinh Quang Ân Bán gấp đất mặt tiền Đinh Quang Ân</a></h3>
-							<ul>
-								<li>
-									<label>Cập nhật:</label>
-									<span class="update_timestamp">5 giờ, 50 phút trước</span>
-								</li>
-								<li>
-									<label>Địa chỉ:</label>
-									<span>Quận 7, Hồ Chí Minh</span>
-								</li>	
-								<li>
-									<label>Diện tích:</label>
-									<span>50m2</span>
-								</li>	
-								<li>
-									<label>Giá:</label>
-									<span class="pricetag">6 Tỷ</span>
-								</li>
-							</ul>
-							<p>Mô tả nhà đất Mô tả nhà đất Mô tả nhà đất Mô tả nhà đất Mô tả nhà đất Mô tả nhà đất Mô tả nhà đất Mô tả nhà đất Mô tả nhà đất Mô tả nhà đất Mô tả nhà đất  Mô tả nhà đất Mô tả nhà đất Mô tả nhà đất Mô tả nhà đất.</p>			
-						</div>
+                        <div class="News">
+                            <div class="News_Images">
+                                <a href="#"><img src="images/Images_1.jpg"></a>
+                            </div>
+                            <div class="News_Title">	
+                                <h3><a href="#">Bán gấp đất mặt tiền Đinh Quang Ân Bán gấp đất mặt tiền Đinh Quang Ân</a></h3>
+                            </div>
+                            <div class="News_Info">	
+                                <ul>
+                                    <li>
+                                        <label>Cập nhật:</label>
+                                        <span class="update_timestamp">5 giờ, 50 phút trước</span>
+                                    </li>
+                                    <li>
+                                        <label>Địa chỉ:</label>
+                                        <span>Quận 7, Hồ Chí Minh Quận 7, Hồ Chí Minh Quận 7, Hồ Chí Minh</span>
+                                    </li>	
+                                    <li>
+                                        <label>Diện tích:</label>
+                                        <span>50m2</span>
+                                    </li>	
+                                    <li>
+                                        <label>Giá:</label>
+                                        <span class="pricetag">6 Tỷ</span>
+                                    </li>
+                                </ul>
+                            </div>	
+                            <p>Mô tả nhà đất Mô tả nhà đất Mô tả nhà đất Mô tả nhà đất Mô tả nhà đất Mô tả nhà đất Mô tả nhà đất Mô tả nhà đất Mô tả nhà đất Mô tả nhà đất Mô tả nhà đất  Mô tả nhà đất Mô tả nhà đất Mô tả nhà đất Mô tả nhà đất.</p>	
+                            <div class="meo"></div>		
+                        </div>
 
-						<div class="News">
-							<div class="News_Images">
-								<a href="#"><img src="images/Images_1.jpg"></a>
-							</div>
-							<h3><a href="#">Bán gấp đất mặt tiền Đinh Quang Ân Bán gấp đất mặt tiền Đinh Quang Ân</a></h3>
-							<ul>
-								<li>
-									<label>Cập nhật:</label>
-									<span class="update_timestamp">5 giờ, 50 phút trước</span>
-								</li>
-								<li>
-									<label>Địa chỉ:</label>
-									<span>Quận 7, Hồ Chí Minh</span>
-								</li>	
-								<li>
-									<label>Diện tích:</label>
-									<span>50m2</span>
-								</li>	
-								<li>
-									<label>Giá:</label>
-									<span class="pricetag">6 Tỷ</span>
-								</li>
-							</ul>
-							<p>Mô tả nhà đất Mô tả nhà đất Mô tả nhà đất Mô tả nhà đất Mô tả nhà đất Mô tả nhà đất Mô tả nhà đất Mô tả nhà đất Mô tả nhà đất Mô tả nhà đất Mô tả nhà đất  Mô tả nhà đất Mô tả nhà đất Mô tả nhà đất Mô tả nhà đất.</p>			
-						</div>
+                        <div class="News">
+                            <div class="News_Images">
+                                <a href="#"><img src="images/Images_1.jpg"></a>
+                            </div>
+                            <div class="News_Title">	
+                                <h3><a href="#">Bán gấp đất mặt tiền Đinh Quang Ân Bán gấp đất mặt tiền Đinh Quang Ân</a></h3>
+                            </div>
+                            <div class="News_Info">	
+                                <ul>
+                                    <li>
+                                        <label>Cập nhật:</label>
+                                        <span class="update_timestamp">5 giờ, 50 phút trước</span>
+                                    </li>
+                                    <li>
+                                        <label>Địa chỉ:</label>
+                                        <span>Quận 7, Hồ Chí Minh Quận 7, Hồ Chí Minh Quận 7, Hồ Chí Minh</span>
+                                    </li>	
+                                    <li>
+                                        <label>Diện tích:</label>
+                                        <span>50m2</span>
+                                    </li>	
+                                    <li>
+                                        <label>Giá:</label>
+                                        <span class="pricetag">6 Tỷ</span>
+                                    </li>
+                                </ul>
+                            </div>	
+                            <p>Mô tả nhà đất Mô tả nhà đất Mô tả nhà đất Mô tả nhà đất Mô tả nhà đất Mô tả nhà đất Mô tả nhà đất Mô tả nhà đất Mô tả nhà đất Mô tả nhà đất Mô tả nhà đất  Mô tả nhà đất Mô tả nhà đất Mô tả nhà đất Mô tả nhà đất.</p>	
+                            <div class="meo"></div>		
+                        </div>
 
-						<div class="News">
-							<div class="News_Images">
-								<a href="#"><img src="images/Images_1.jpg"></a>
-							</div>
-							<h3><a href="#">Bán gấp đất mặt tiền Đinh Quang Ân Bán gấp đất mặt tiền Đinh Quang Ân</a></h3>
-							<ul>
-								<li>
-									<label>Cập nhật:</label>
-									<span class="update_timestamp">5 giờ, 50 phút trước</span>
-								</li>
-								<li>
-									<label>Địa chỉ:</label>
-									<span>Quận 7, Hồ Chí Minh</span>
-								</li>	
-								<li>
-									<label>Diện tích:</label>
-									<span>50m2</span>
-								</li>	
-								<li>
-									<label>Giá:</label>
-									<span class="pricetag">6 Tỷ</span>
-								</li>
-							</ul>
-							<p>Mô tả nhà đất Mô tả nhà đất Mô tả nhà đất Mô tả nhà đất Mô tả nhà đất Mô tả nhà đất Mô tả nhà đất Mô tả nhà đất Mô tả nhà đất Mô tả nhà đất Mô tả nhà đất  Mô tả nhà đất Mô tả nhà đất Mô tả nhà đất Mô tả nhà đất.</p>			
-						</div>
+                        <div class="News">
+                            <div class="News_Images">
+                                <a href="#"><img src="images/Images_1.jpg"></a>
+                            </div>
+                            <div class="News_Title">	
+                                <h3><a href="#">Bán gấp đất mặt tiền Đinh Quang Ân Bán gấp đất mặt tiền Đinh Quang Ân</a></h3>
+                            </div>
+                            <div class="News_Info">	
+                                <ul>
+                                    <li>
+                                        <label>Cập nhật:</label>
+                                        <span class="update_timestamp">5 giờ, 50 phút trước</span>
+                                    </li>
+                                    <li>
+                                        <label>Địa chỉ:</label>
+                                        <span>Quận 7, Hồ Chí Minh Quận 7, Hồ Chí Minh Quận 7, Hồ Chí Minh</span>
+                                    </li>	
+                                    <li>
+                                        <label>Diện tích:</label>
+                                        <span>50m2</span>
+                                    </li>	
+                                    <li>
+                                        <label>Giá:</label>
+                                        <span class="pricetag">6 Tỷ</span>
+                                    </li>
+                                </ul>
+                            </div>	
+                            <p>Mô tả nhà đất Mô tả nhà đất Mô tả nhà đất Mô tả nhà đất Mô tả nhà đất Mô tả nhà đất Mô tả nhà đất Mô tả nhà đất Mô tả nhà đất Mô tả nhà đất Mô tả nhà đất  Mô tả nhà đất Mô tả nhà đất Mô tả nhà đất Mô tả nhà đất.</p>	
+                            <div class="meo"></div>		
+                        </div>
 
-						<div class="News">
-							<div class="News_Images">
-								<a href="#"><img src="images/Images_1.jpg"></a>
-							</div>
-							<h3><a href="#">Bán gấp đất mặt tiền Đinh Quang Ân Bán gấp đất mặt tiền Đinh Quang Ân</a></h3>
-							<ul>
-								<li>
-									<label>Cập nhật:</label>
-									<span class="update_timestamp">5 giờ, 50 phút trước</span>
-								</li>
-								<li>
-									<label>Địa chỉ:</label>
-									<span>Quận 7, Hồ Chí Minh</span>
-								</li>	
-								<li>
-									<label>Diện tích:</label>
-									<span>50m2</span>
-								</li>	
-								<li>
-									<label>Giá:</label>
-									<span class="pricetag">6 Tỷ</span>
-								</li>
-							</ul>
-							<p>Mô tả nhà đất Mô tả nhà đất Mô tả nhà đất Mô tả nhà đất Mô tả nhà đất Mô tả nhà đất Mô tả nhà đất Mô tả nhà đất Mô tả nhà đất Mô tả nhà đất Mô tả nhà đất  Mô tả nhà đất Mô tả nhà đất Mô tả nhà đất Mô tả nhà đất.</p>			
-						</div>
+                        <div class="News">
+                            <div class="News_Images">
+                                <a href="#"><img src="images/Images_1.jpg"></a>
+                            </div>
+                            <div class="News_Title">	
+                                <h3><a href="#">Bán gấp đất mặt tiền Đinh Quang Ân Bán gấp đất mặt tiền Đinh Quang Ân</a></h3>
+                            </div>
+                            <div class="News_Info">	
+                                <ul>
+                                    <li>
+                                        <label>Cập nhật:</label>
+                                        <span class="update_timestamp">5 giờ, 50 phút trước</span>
+                                    </li>
+                                    <li>
+                                        <label>Địa chỉ:</label>
+                                        <span>Quận 7, Hồ Chí Minh Quận 7, Hồ Chí Minh Quận 7, Hồ Chí Minh</span>
+                                    </li>	
+                                    <li>
+                                        <label>Diện tích:</label>
+                                        <span>50m2</span>
+                                    </li>	
+                                    <li>
+                                        <label>Giá:</label>
+                                        <span class="pricetag">6 Tỷ</span>
+                                    </li>
+                                </ul>
+                            </div>	
+                            <p>Mô tả nhà đất Mô tả nhà đất Mô tả nhà đất Mô tả nhà đất Mô tả nhà đất Mô tả nhà đất Mô tả nhà đất Mô tả nhà đất Mô tả nhà đất Mô tả nhà đất Mô tả nhà đất  Mô tả nhà đất Mô tả nhà đất Mô tả nhà đất Mô tả nhà đất.</p>	
+                            <div class="meo"></div>		
+                        </div>
 
-						<div class="News">
-							<div class="News_Images">
-								<a href="#"><img src="images/Images_1.jpg"></a>
-							</div>
-							<h3><a href="#">Bán gấp đất mặt tiền Đinh Quang Ân Bán gấp đất mặt tiền Đinh Quang Ân</a></h3>
-							<ul>
-								<li>
-									<label>Cập nhật:</label>
-									<span class="update_timestamp">5 giờ, 50 phút trước</span>
-								</li>
-								<li>
-									<label>Địa chỉ:</label>
-									<span>Quận 7, Hồ Chí Minh</span>
-								</li>	
-								<li>
-									<label>Diện tích:</label>
-									<span>50m2</span>
-								</li>	
-								<li>
-									<label>Giá:</label>
-									<span class="pricetag">6 Tỷ</span>
-								</li>
-							</ul>
-							<p>Mô tả nhà đất Mô tả nhà đất Mô tả nhà đất Mô tả nhà đất Mô tả nhà đất Mô tả nhà đất Mô tả nhà đất Mô tả nhà đất Mô tả nhà đất Mô tả nhà đất Mô tả nhà đất  Mô tả nhà đất Mô tả nhà đất Mô tả nhà đất Mô tả nhà đất.</p>			
-						</div>
-					</div>
+                        <div class="News">
+                            <div class="News_Images">
+                                <a href="#"><img src="images/Images_1.jpg"></a>
+                            </div>
+                            <div class="News_Title">	
+                                <h3><a href="#">Bán gấp đất mặt tiền Đinh Quang Ân Bán gấp đất mặt tiền Đinh Quang Ân</a></h3>
+                            </div>
+                            <div class="News_Info">	
+                                <ul>
+                                    <li>
+                                        <label>Cập nhật:</label>
+                                        <span class="update_timestamp">5 giờ, 50 phút trước</span>
+                                    </li>
+                                    <li>
+                                        <label>Địa chỉ:</label>
+                                        <span>Quận 7, Hồ Chí Minh Quận 7, Hồ Chí Minh Quận 7, Hồ Chí Minh</span>
+                                    </li>	
+                                    <li>
+                                        <label>Diện tích:</label>
+                                        <span>50m2</span>
+                                    </li>	
+                                    <li>
+                                        <label>Giá:</label>
+                                        <span class="pricetag">6 Tỷ</span>
+                                    </li>
+                                </ul>
+                            </div>	
+                            <p>Mô tả nhà đất Mô tả nhà đất Mô tả nhà đất Mô tả nhà đất Mô tả nhà đất Mô tả nhà đất Mô tả nhà đất Mô tả nhà đất Mô tả nhà đất Mô tả nhà đất Mô tả nhà đất  Mô tả nhà đất Mô tả nhà đất Mô tả nhà đất Mô tả nhà đất.</p>	
+                            <div class="meo"></div>		
+                        </div>	
+						
 
-				</div>	
-
+				</div>	               </div>
+                
 				<div class="col-xs-4">
 					<div class="DetailsPage">
 						<!-- logo -->
 						<div id="logo">
-							<img src="images/NDMR-slogan_2.png" alt="nhadatmuare.com"/>
+							<img src="images/logo-moi.png" alt="nhadatmuare.com"/>
 						</div>
 
 						<!-- Phần Vertical Search Area-->
@@ -380,8 +417,8 @@
 					</div>			
 				</div>	
 
-
-			</div>
+            </div>
+			
 				
 					
 
@@ -391,29 +428,31 @@
 
 			
 			<!-- FOOTER -->	
-			<div>
-				<div class="NavArea" id="Footer">
-					<ul class="nav nav-pills" id="FooterNav">
-						<li><a href="http://nhadatmuare.com/">MUA BÁN NHÀ ĐẤT</a></li>
-						<li><a href="#">BÁN</a></li>
-						<li><a href="#">CHO THUÊ</a></li>
-						<li><a href="#">ĐĂNG NHẬP</a></li>
-						<li><a href="#">ĐĂNG TIN</a></li>
-						<li><a href="#">RSS</a></li>
-					</ul>
-				</div>
-				
+			<div id="Footer">
+				<div id="nav">
+		            <div id="nav_wrapper">
+		                <ul class="mainmenu">
+                            <li><a href="http://nhadatmuare.com/">MUA BÁN NHÀ ĐẤT</a></li>
+                            <li><a href="#">BÁN</a></li>
+                            <li><a href="#">CHO THUÊ</a></li>
+                            <li><a href="#">ĐĂNG NHẬP</a></li>
+                            <li><a href="#">ĐĂNG TIN</a></li>
+                            <li><a href="#">RSS</a></li>
+		                </ul>
+		            </div>
+		        </div>
+
 				<div class="jumbotron" id="FooterJumbotron">
 					<p>Copyright © 2016 nhadatmuare.com. ® Ghi rõ nguồn "nhadatmuare.com" khi phát hành lại thông tin từ website này.<br>
-					Công ty Cổ phần Truyền thông và Công nghệ Nguyễn Trần<br>
-					Giấy chứng nhận ĐKKD số 0106006379 do Sở Kế hoạch & Đầu tư TP.Hà Nội cấp<br>
-					Địa chỉ: Tầng 4 , 77 Xã Đàn , phường Phương Liên , quận Đống Đa, Hà Nội.<br>
+					Công ty XXXXXXXXXXXXXXXXXX<br>
+					Giấy chứng nhận ĐKKD số XXXXXXXXX do Sở Kế hoạch & Đầu tư TP.Hà Nội cấp<br>
+					Địa chỉ: XXXXXXXXXXXXXXXXXXX<br>
 					Thời gian làm việc: 8h đến 17h ngày Thứ 2 đến thứ 6 ,Thứ 7 từ 8h đến 12h.<br>
-					Hotline: 01686.123.123 | Email: contact@123nhadat.vn<br>
-					Tel : 0437.123.666 | Fax : 0437.123.555</p>
+					Hotline: XXXXXXXXX | Email: XXXXX@XXXXXX<br>
+					Tel : XXXXXXXXX | Fax : XXXXXXXXXX5</p>
 
-			</div>	
+			    </div>	
 
-		</div>	
+		  </div>
 	</body>
 </html>

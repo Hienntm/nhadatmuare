@@ -2,70 +2,89 @@
 	font-family: 'Open Sans', sans-serif;
 	font-weight: 400;
 	font-size: 14px;
+	text-align: justify;
 }
 
 /* PHẦN NAV */
-.NavArea {
-	background-color: #008080;
-	width: 100%;
-	text-align: center;
-}
-.nav {
-	display: inline-block;
-}
-.nav li a {
-	color: #fff;
-	font-size: 18px;
-	font-weight: 300;
-	padding-left: 25px;
-	padding-right: 25px; 
-	border-bottom-style: solid;
-	border-bottom-width: 3px;
-	border-bottom-color: #008080;
-}
-.nav > li > a:hover,
-.nav > li > a:focus,
-.nav .open > a:hover,
-.nav .open > a:focus {
-	border-radius: 0px;
-	background-color: #008080;
-	color: #fff;
-	border-bottom-color: #fff;
-}
+/*.header {
+	background: url("images/painted blue wall_2.jpg");
+	background-size: 100% 100%;
+}*/
+#nav {
+    background-color: #055699;
 
-.nav #PostNews {
-	width: 150px;
-	height: 35px;
-	margin-top: 5px;
-	margin-bottom: 5px;
+}
+#nav_wrapper {
+    width: 960px;
+    margin: 0 auto;
+    text-align: left;
+}
+#nav .mainmenu {
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+    position: relative;
     text-align: center;
-
 }
-.nav #PostNews a {
-	color: #fff;
+#nav .mainmenu li {
+
+    display: inline-block;
+    height: 50px;
+    border-bottom-style: solid 3px #055699;
+}
+#nav .mainmenu li:hover{
+    border-bottom-style: solid;
+    border-bottom-width: 3px;
+    border-bottom-color: #fff;
+    /*background-color: #333;*/
+}
+#nav .mainmenu li a {
 	font-size: 18px;
 	font-weight: 300;
-	text-decoration: none;
-	position: relative;
+    color: #fff;
     display: block;
-    padding-top: 4px;
-    padding-bottom: 4px;
-    border-style: solid;
-	border-width: 1px;
-	border-color: #fff;
-	border-radius: 3px;
+    padding: 10px 25px;
+    text-decoration: none;
 }
-.nav #PostNews a:hover,
-.nav #PostNews a:focus{
-	color: #00CED1;
-	border-color: #00CED1;
-	background-color: #008080;
+#nav .mainmenu li a:hover {
+    color: #fff;
+    text-decoration: none;
 }
 
-/* PHẦN JUMPBOTRON - SEARCH AREA */
-.jumbotron {
-	background-color: #66CDAA;
+#nav .mainmenu li:hover ul {
+    display: block;
 }
+#nav .dropdown {
+    display: none;
+    position: absolute;
+    top: 51px;
+    background-color: #055699;
+    z-index: 100;
+    padding-left: 0px;
+}
+#nav .dropdown li {
+    display: block;
+    border-bottom-style: solid;
+    border-bottom-width: 1px;
+    border-bottom-color: #fff;
+    height: 40px;
+    padding: 7px 15px;
+}
+#nav .dropdown li a {
+    padding: 0px;
+}
+#nav .dropdown li:hover {
+    background-color: #2895F0;
+    border-bottom-width: 1px;
+}
+
+
+ /*PHẦN JUMPBOTRON - SEARCH AREA */
+.jumbotron {
+	/*background-color: transparent;*/
+	background-color: #E4E6E5;
+}
+
 #logo img {
 	display: block;
 	margin-left: auto;
@@ -73,16 +92,21 @@
     margin-bottom: 30px;
 }
 #SearchArea {
-	width: 1000px;
+	max-width: 1000px;
 	margin-left: auto;
     margin-right: auto;
     font-size: 16px;
 	font-weight: 400;
 }
-
+#SearchArea select {
+    appearance:none;
+    -moz-appearance:none; /* Firefox */
+    -webkit-appearance:none; /* Safari and Chrome */
+    background: url(images/select-arrow.png) no-repeat right white;
+}
 #SearchArea .TextBox {
 	color: #999;
-	border: none;
+	border: 1px solid #055699;
 	border-radius: 2px;
 	width: 162px;
 	height: 30px;
@@ -99,7 +123,7 @@
 #SearchArea #SearchBox {
 	width: 750px;
 	height: 55px;
-	border: none;
+	border: 1px solid #055699;
 	border-radius: 2px;
 	margin: 5px;
 	padding-left: 10px;
@@ -108,7 +132,7 @@
 #SearchArea #SearchButton {
 	width: 100px;
 	height: 55px;
-	background-color: #008080;
+	background-color: #055699;
 	color: #fff;
 	font-weight: 400;
 	border: none;
@@ -118,7 +142,7 @@
 #SearchArea #UndoButton {
 	width: 162px;
 	height: 30px;
-	background-color: #008080;
+	background-color: #055699;
 	color: #fff;
 	font-size: 16px;
 	font-weight: 400;
@@ -129,21 +153,21 @@
 
 /*PHAN TIN TUC*/
 .container {
-	width: 1050px;
+	max-width: 1050px;
 }
-#NewsTitle {	
+#NewestNews {	
 	font-weight: 300;
 	font-size: 30px;
 	margin-top: 0px;
 	margin-bottom: 30px;
 }
 .News {
-	margin-bottom: 50px;
+	margin-top: 50px;
 }
 .News .News_Images{
 	float: left;
-	margin-right: 15px;
-	width: 200px;
+	width: 30%;
+	/*margin-top: 5px;*/
 	height: 125px;
 	position: relative;
 	overflow: hidden;
@@ -152,58 +176,68 @@
 	width: 100%;
 	height: auto;
 	position: absolute;
-	top: 50%;
-	bottom: 50%;
+	top: -50%;
+	bottom: -50%;
 	margin: auto;
-	
 }
-.News h3 {
-	height: 45px;
+.News .News_Title {
+	float: left;
+	width: 70%;
+}
+
+.News .News_Title h3 {
+	padding-left: 15px;
 	margin-top: 0px;
 	margin-bottom: 0px;
-}	
-.News h3 a{
-	color: #008080;
+}
+.News .News_Title h3 a{
+	color: #055699;
 	font-weight: 600;
 	font-size: 15px;
 	line-height: 23px;
 	text-decoration: none;
 }
-.News h3 a:hover,
-.News h3 a:focus {
+.News .News_Title h3 a:hover,
+.News .News_Title h3 a:focus {
 	color: #00CED1;
 }
-.News ul {
-	margin:0px;
+.News .News_Info {
+	float: left;
+	width: 70%;
 }
-.News ul li {
+.News .News_Info ul {
+	padding-left: 15px;
+}	
+.News .News_Info ul li {
 	list-style: none;
 	line-height: 20px;
 }
-.News ul li label {
+.News .News_Info ul li label {
 	font-weight: 400;
 	font-size: 14px;
-	width: 80px;
+	width: 20%;
 	margin: 0px;
+	float: left;
 }
-
-.News ul li .update_timestamp {
+.News .News_Info ul li span {
+	width: 80%;
+	float: left;
+}
+.News .News_Info ul li .update_timestamp {
 	color: #999;
 	font-style: italic;
 }
 
-.News ul li .pricetag {
+.News .News_Info ul li .pricetag {
 	color: #FF0000;
 	font-weight: 600;
 }
 
 .News p {
-	margin-left: 0px;
-	margin-top: 10px;
+	clear: both;
 	font-weight: 400;
+	padding-top: 10px;
 }
-
-
 
 
 /* PHẦN CHẠY QUẢNG CÁO */
@@ -213,7 +247,7 @@
 
 /* PHẦN DỰ ÁN NHIỀU GIAO DỊCH */
 #Title_DANGD {
-	background-color: #008080;
+	background-color: #055699;
 	color: #fff;
 	padding: 5px;
 	font-size: 20px;
@@ -224,19 +258,24 @@
 	padding-left: 0px;
 }
 #List_DANGD li {
-	list-style-image: url('images/list-bullet.png');
-	list-style-position: inside;
+	
+	list-style: none;
+	-moz-list-style: none; /* Firefox */
+    -webkit-list-style: none; /* Safari and Chrome */
+    width: 100%;
 }
 #List_DANGD li a {
+    background: url('images/list-bullet.png') no-repeat left white;
 	display: block;
-	padding: 5px;
+	width: 100%;
+	padding: 5px 5px 5px 20px;
 	text-decoration: none;
 	color: #333;
 }
 #List_DANGD li a:hover,
 #List_DANGD li a:focus {
 	color: #fff;
-	background-color: #66CDAA;
+	background-color: #2895F0;
 }
 
 
@@ -244,19 +283,14 @@
 #Footer {
 	margin-top: 100px;
 }
-
-#FooterNav {
-	background-color: #008080;
-}
-#FooterJumbotron {
-	background-color: #fff;
-
-}
 #FooterJumbotron p {
-	font-size: 15px;
-	font-weight: 400;
-	text-align: center;
+    font-size: 16px;
+    font-weight: 400;
+    color: #055699;
+    text-align: center;
+    line-height: 30px;
 }
+
 
 /***********************************
 TRANG CHI TIẾT
@@ -265,7 +299,7 @@ TRANG CHI TIẾT
 /* PHẦN TIN CHI TIẾT */
 
 .DetailsPage #DetailsTitle {
-	color: #008080;
+	color: #055699;
 	margin-top: 70px;
 }
 
@@ -291,7 +325,7 @@ TRANG CHI TIẾT
 .DetailsPage #Details #Tabs {
 	height: 40px;
 	border-bottom-style: solid;
-	border-bottom-color: #008080;
+	border-bottom-color: #055699;
 	border-bottom-width: 5px;
 	position: relative;
 }
@@ -304,7 +338,7 @@ TRANG CHI TIẾT
 	text-align: center;
 	border-style: solid;
 	border-width: 1px;
-	border-color: #008080;
+	border-color: #055699;
 	border-top-right-radius: 5px;
 	border-top-left-radius: 5px;
 	padding-top: 5px;
@@ -312,13 +346,13 @@ TRANG CHI TIẾT
 .DetailsPage #Details #Tabs span a {
 	font-size: 18px;
 	font-weight: 300;
-	color: #008080;
+	color: #055699;
 	text-decoration: none;
 }
 .DetailsPage #Details #Tabs span.activated {
 	border: none;
-	border-color: #008080;
-	background-color: #008080;
+	border-color: #055699;
+	background-color: #055699;
 }
 
 .DetailsPage #Details #Tabs span.activated a {
@@ -342,7 +376,7 @@ TRANG CHI TIẾT
 	position: relative;
 	overflow: hidden;
 	border-bottom-style: solid;
-	border-bottom-color: #008080;
+	border-bottom-color: #055699;
 	border-bottom-width: 5px;
 	margin-bottom: 20px;
 }
@@ -350,17 +384,21 @@ TRANG CHI TIẾT
 	width: 100%;
 	height: auto;
 	position: absolute;
-	top: 50%;
-	bottom: 50%;
+	top: -50%;
+	bottom: -50%;
 	margin:auto;
 }
 .DetailsPage .LeftColumn {
 	padding-left: 0px;
 	float: left;
 }
+.DetailsPage h3 {
+	font-size: 20px;
+}
 .DetailsPage .DetailsInfo {
 	margin-top: 50px;
 }
+
 /* PHẦN TIN LIÊN QUAN */
 .RelatedNews {
 	margin-top: 70px;
@@ -382,14 +420,19 @@ TRANG CHI TIẾT
 	padding-right: 65px;
 	position: relative;
 }
-
+#Vertical_SearchArea select {
+    appearance:none;
+    -moz-appearance:none; /* Firefox */
+    -webkit-appearance:none; /* Safari and Chrome */
+    background: url(images/select-arrow.png) no-repeat right white;
+}
 #Vertical_SearchArea #SearchBox {
 	display: block;
 	width: 180px;
 	height: 50px;
 	border: solid;
 	border-width: 2px;
-	border-color: #008080;
+	border-color: #055699;
 	border-radius: 5px;
 	margin-top: 10px;
 	margin-bottom: 10px;
@@ -403,15 +446,16 @@ TRANG CHI TIẾT
 	height: 35px;
 	border: solid;
 	border-width: 1.5px;
-	border-color: #008080;	
+	border-color: #055699;	
 	border-radius: 5px;
 	margin-top: 10px;
 	margin-bottom: 10px;
+	padding-left: 10px;
 }
 #Vertical_SearchArea #SearchButton {
 	width: 50px;
 	height: 40px;
-	background-color: #008080;
+	background-color: #055699;
 	border-width: 0px;
 	border-radius: 5px;
 	background-image: url('images/search-icon.png');
@@ -429,7 +473,7 @@ TRANG CHI TIẾT
 	color: #fff;
 	font-size: 16px;
 	padding-left: 40px;
-	background-color: #008080;
+	background-color: #055699;
 	border-width: 0px;
 	border-radius: 5px;
 	background-image: url('images/undo-icon.png');
@@ -445,3 +489,4 @@ TRANG CHI TIẾT
 	width: 100%;
 	height: 40px;
 }
+
