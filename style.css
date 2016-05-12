@@ -77,8 +77,35 @@
     background-color: #2895F0;
     border-bottom-width: 1px;
 }
+#nav #post {
+    background: url(images/new-file-icon.png) no-repeat left;
+    background-position: 13px 7px;
+    padding-left: 45px;
+}
 
-
+#nav #hotline {
+    position: absolute;
+    top: 13px;
+    right: 10px;
+}
+#nav #hotline span#left{
+    border: solid 1px #fff;
+    font-size: 18px;
+    font-weight: 400;
+    color: #055699;
+    padding: 5px 10px 5px 35px;
+    background-color: #fff;
+    background: url(images/phone-call-icon.png) no-repeat left white;
+    background-size: 22px 22px;
+    background-position: 10px 7px;
+}
+#nav #hotline span#right{
+    border: solid 1px #fff;
+    font-size: 18px;
+    font-weight: 400;
+    color: #fff;
+    padding: 5px 10px;
+}
  /*PHẦN JUMPBOTRON - SEARCH AREA */
 .jumbotron {
 	/*background-color: transparent;*/
@@ -228,7 +255,7 @@
 	font-style: italic;
 }
 
-.News .News_Info ul li .pricetag {
+.pricetag {
 	color: #FF0000;
 	font-weight: 600;
 }
@@ -366,7 +393,7 @@ TRANG CHI TIẾT
 }
 .DetailsPage #Details #Tabs #MapTab {
 	position: absolute;
-	top: 2px;
+	top: 0px;
 	left: 120px;
 }
 
@@ -392,8 +419,13 @@ TRANG CHI TIẾT
 	padding-left: 0px;
 	float: left;
 }
-.DetailsPage h3 {
+.DetailsPage h3#contact {
+    padding-left: 30px;
 	font-size: 20px;
+    color: #055699;
+    background: url(images/phone-call-icon.png) no-repeat left white;
+    background-size: 22px 22px;
+    /*background-position: 10px 7px;*/
 }
 .DetailsPage .DetailsInfo {
 	margin-top: 50px;
@@ -409,8 +441,8 @@ TRANG CHI TIẾT
 	margin-top: 70px;
 }
 .DetailsPage #logo img {
-	width: 100%;
-	height: auto;
+	width: 180px;
+
 }
 
 #Vertical_SearchArea {
