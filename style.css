@@ -108,8 +108,11 @@
 }
  /*PHẦN JUMPBOTRON - SEARCH AREA */
 .jumbotron {
-	/*background-color: transparent;*/
-	background-color: #E4E6E5;
+	/*background-color: transparent;
+	background-color: #E4E6E5;*/
+    background: url(images/IMG_0140.JPG) no-repeat center white;
+    background-size: 100% auto;
+    background-position: 0px;
 }
 
 #logo img {
@@ -256,7 +259,7 @@
 }
 
 .pricetag {
-	color: #FF0000;
+	/*color: #CC0000;*/
 	font-weight: 600;
 }
 
@@ -309,6 +312,9 @@
 /*FOOTER*/
 #Footer {
 	margin-top: 100px;
+}
+#FooterJumbotron {
+    padding: 50px 0px;
 }
 #FooterJumbotron p {
     font-size: 16px;
