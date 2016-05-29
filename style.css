@@ -4,188 +4,117 @@
 	font-size: 14px;
 	text-align: justify;
 }
+body {
+    background-color: #F8F8F8;
+    
+}
+.container {
+	max-width: 1000px;
+}
+.col-xs-2, .col-xs-3, .col-xs-9, .col-xs-10, .col-xs-12 {
+    padding-left: 5px;
+    padding-right: 5px;
+}
 
 /* PHẦN NAV */
-/*.header {
-	background: url("images/painted blue wall_2.jpg");
-	background-size: 100% 100%;
-}*/
-#nav {
-    background-color: #055699;
-
-}
-#nav_wrapper {
-    width: 960px;
-    margin: 0 auto;
-    text-align: left;
-}
-#nav .mainmenu {
-    list-style-type: none;
-    padding: 0;
-    margin: 0;
-    position: relative;
-    text-align: center;
-}
-#nav .mainmenu li {
-
-    display: inline-block;
-    height: 50px;
-    border-bottom-style: solid 3px #055699;
-}
-#nav .mainmenu li:hover{
-    border-bottom-style: solid;
-    border-bottom-width: 3px;
-    border-bottom-color: #fff;
-    /*background-color: #333;*/
-}
-#nav .mainmenu li a {
-	font-size: 18px;
-	font-weight: 300;
-    color: #fff;
-    display: block;
-    padding: 10px 25px;
-    text-decoration: none;
-}
-#nav .mainmenu li a:hover {
-    color: #fff;
-    text-decoration: none;
+.header {
+    background: -webkit-linear-gradient(#ccffff, #006699);
+    background: -o-linear-gradient(#ccffff, #006699);
+    background: -moz-linear-gradient(#ccffff, #006699);
+    background: linear-gradient(#ccffff, #006699);  
+    
 }
 
-#nav .mainmenu li:hover ul {
-    display: block;
+.logo {
+    padding-top: 10px;
+    padding-bottom: 10px;
 }
-#nav .dropdown {
-    display: none;
-    position: absolute;
-    top: 51px;
-    background-color: #055699;
-    z-index: 100;
-    padding-left: 0px;
-}
-#nav .dropdown li {
-    display: block;
-    border-bottom-style: solid;
-    border-bottom-width: 1px;
-    border-bottom-color: #fff;
-    height: 40px;
-    padding: 7px 15px;
-}
-#nav .dropdown li a {
-    padding: 0px;
-}
-#nav .dropdown li:hover {
-    background-color: #2895F0;
-    border-bottom-width: 1px;
-}
-#nav #post {
-    background: url(images/new-file-icon.png) no-repeat left;
-    background-position: 13px 7px;
-    padding-left: 45px;
+.logo img {
+    width: 200px;
 }
 
-#nav #hotline {
-    position: absolute;
-    top: 13px;
-    right: 10px;
-}
-#nav #hotline span#left{
-    border: solid 1px #fff;
-    font-size: 18px;
+h1.hotline, h1.title {
+    text-align: right;
     font-weight: 400;
-    color: #055699;
-    padding: 5px 10px 5px 35px;
-    background-color: #fff;
-    background: url(images/phone-call-icon.png) no-repeat left white;
-    background-size: 22px 22px;
-    background-position: 10px 7px;
-}
-#nav #hotline span#right{
-    border: solid 1px #fff;
-    font-size: 18px;
-    font-weight: 400;
-    color: #fff;
-    padding: 5px 10px;
-}
- /*PHẦN JUMPBOTRON - SEARCH AREA */
-.jumbotron {
-	/*background-color: transparent;
-	background-color: #E4E6E5;*/
-    background: url(images/IMG_0140.JPG) no-repeat center white;
-    background-size: 100% auto;
-    background-position: 0px;
 }
 
-#logo img {
-	display: block;
-	margin-left: auto;
-    margin-right: auto;
-    margin-bottom: 30px;
+h1.hotline {
+    font-size: 22px;
+    color: #ff0000;
 }
-#SearchArea {
-	max-width: 1000px;
-	margin-left: auto;
-    margin-right: auto;
+h1.hotline .strong {
+    font-weight: 700;
+    font-size: 25px;
+}
+h1.hotline .glyphicon-earphone {
+    font-weight: 400;
+    font-size: 20px;
+}
+
+h1.title {
+    margin-top: 30px;
+    font-size: 35px;
+    color: antiquewhite;
+}
+h1.title .strong {
+    font-weight: 700;
+    font-size: 35px;
+}
+
+.navigation {
+    background-color: #055699;
+    
+}
+.navbar-nav>li>a {
+    
+    color: antiquewhite;
     font-size: 16px;
-	font-weight: 400;
+    padding-left: 25px;
+    padding-right: 25px;
 }
-#SearchArea select {
-    appearance:none;
-    -moz-appearance:none; /* Firefox */
-    -webkit-appearance:none; /* Safari and Chrome */
-    background: url(images/select-arrow.png) no-repeat right white;
-}
-#SearchArea .TextBox {
-	color: #999;
-	border: 1px solid #055699;
-	border-radius: 2px;
-	width: 162px;
-	height: 30px;
-	margin: 5px;
-	padding-left: 10px;
+.navbar-nav>li>a:hover, .navbar-nav>li>a:focus {
+    background-color: #1E90FF;
+
 }
 
-#SearchArea #BanChoThue {
-	width: 100px;
-	height: 55px;
-	border-radius: 2px;
+.dropdown button {
+    
+    color: antiquewhite;
+    font-size: 16px;
+    padding: 14px 25px 14px 25px;
+    background-color: #055699;
+    border: none;
+}
+.dropdown button:hover, .dropdown button:focus {
+    background-color: #1E90FF;
 }
 
-#SearchArea #SearchBox {
-	width: 750px;
-	height: 55px;
-	border: 1px solid #055699;
-	border-radius: 2px;
-	margin: 5px;
-	padding-left: 10px;
+
+ /*PHẦN CAROUSEL*/
+.carousel {
+    margin-top: 10px;
+    margin-bottom: 10px;
 }
 
-#SearchArea #SearchButton {
-	width: 100px;
-	height: 55px;
-	background-color: #055699;
-	color: #fff;
-	font-weight: 400;
-	border: none;
-	border-radius: 2px;
-	margin: 5px;
+.carousel-inner {
+    height: 400px;
 }
-#SearchArea #UndoButton {
-	width: 162px;
-	height: 30px;
-	background-color: #055699;
-	color: #fff;
-	font-size: 16px;
-	font-weight: 400;
-	border: none;
-	border-radius: 2px;
-	margin: 5px;
+.carousel-inner > .item > img,
+.carousel-inner > .item > a > img {
+      width: 100%;
+      margin: auto;
 }
-
+.carousel-control.left, .carousel-control.right {
+    background-image: none;
+}
 /*PHAN TIN TUC*/
-.container {
-	max-width: 1050px;
+.Frame {
+    border: solid 1px #999999;
+    background-color: white;
+    padding: 5px 20px 20px 20px;
+    margin-bottom: 10px;
 }
-#NewestNews {	
+.NewestNews {	
 	font-weight: 300;
 	font-size: 30px;
 	margin-top: 0px;
@@ -193,6 +122,7 @@
 }
 .News {
 	margin-top: 50px;
+    border-bottom: solid 1px #055699;
 }
 .News .News_Images{
 	float: left;
@@ -268,33 +198,78 @@
 	font-weight: 400;
 	padding-top: 10px;
 }
-
-
-/* PHẦN CHẠY QUẢNG CÁO */
-#QuangCao {
-	width: 100%;
+.paging {
+    margin-top: 20px;
+    margin-bottom: 20px;
+    text-align: right;
+}
+.btn-primary {
+    background-color: #055699;
 }
 
-/* PHẦN DỰ ÁN NHIỀU GIAO DỊCH */
-#Title_DANGD {
-	background-color: #055699;
+.btn-primary:hover {
+    background-color: #1E90FF;
+}
+
+
+/* PHẦN TÌM KIẾM */
+.Tab {
+    background-color: #055699;
 	color: #fff;
 	padding: 5px;
 	font-size: 20px;
-	font-weight: 300;
+	font-weight: 600;
+    text-align: center;
 	margin-bottom: 0px;
+    margin-top: 0px;
 }
-#List_DANGD {
+
+.SearchKey, .SelectBox {
+    display: block;
+    width: 90%;
+    height: 40px;
+    margin: auto;
+    margin-top: 10px;
+    margin-bottom: 10px;
+}
+
+.advancedsearch {
+    text-align: left;
+    font-weight: 600;
+    text-decoration: underline;
+    margin-left: 5%;
+    display: inline-block;
+    width: 40%;
+}
+
+.searchbutton {
+    display: inline-block;
+    width: 50%;
+}
+
+/* PHẦN CHẠY QUẢNG CÁO */
+.rightAd {
+	margin-bottom: 10px;
+    
+}
+.rightAd img {
+    width: 100%;
+}
+
+/* PHẦN DỰ ÁN NHIỀU GIAO DỊCH */
+
+.list {
 	padding-left: 0px;
+    
 }
-#List_DANGD li {
+.list li {
 	
 	list-style: none;
 	-moz-list-style: none; /* Firefox */
     -webkit-list-style: none; /* Safari and Chrome */
     width: 100%;
 }
-#List_DANGD li a {
+.list li a {
     background: url('images/list-bullet.png') no-repeat left white;
 	display: block;
 	width: 100%;
@@ -302,24 +277,33 @@
 	text-decoration: none;
 	color: #333;
 }
-#List_DANGD li a:hover,
-#List_DANGD li a:focus {
+.list li a:hover,
+.list li a:focus {
 	color: #fff;
 	background-color: #2895F0;
 }
 
 
 /*FOOTER*/
-#Footer {
+.footer {
 	margin-top: 100px;
 }
-#FooterJumbotron {
-    padding: 50px 0px;
+
+.footerTab {
+    background-color: #055699;
+    height: 50px;
 }
-#FooterJumbotron p {
+.footerInfo {
+    padding: 50px 0px;
+    background: -webkit-linear-gradient(#006699, #ccffff);
+    background: -o-linear-gradient(#006699, #ccffff);
+    background: -moz-linear-gradient(#006699, #ccffff);
+    background: linear-gradient(#006699, #ccffff);
+}
+.footerInfo p {
     font-size: 16px;
     font-weight: 400;
-    color: #055699;
+    color: antiquewhite;
     text-align: center;
     line-height: 30px;
 }

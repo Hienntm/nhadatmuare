@@ -13,7 +13,7 @@ var area = [
     }
 ];
 
-
+//Sửa thành addDistrict(province)
 $(document).ready(function(){
     
     function addDistrict(arr,index){
@@ -36,3 +36,25 @@ $(document).ready(function(){
     });
     
 });
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
